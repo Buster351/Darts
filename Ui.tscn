@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw3c2a4h2q67t"]
+
+[ext_resource type="PackedScene" uid="uid://bc0y5oevjmsx7" path="res://Meter.tscn" id="1"]
+
+[node name="Ui" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Meter" parent="." instance=ExtResource("1")]
+position = Vector2(36, 513)

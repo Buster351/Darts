@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://brodg6p8yv2fk"]
+
+[ext_resource type="Script" path="res://ScoreBoard.gd" id="1_2gvqe"]
+[ext_resource type="FontFile" uid="uid://cyseqsabnchww" path="res://KrayolaV1Regular-1Go9e.ttf" id="2_ab31e"]
+[ext_resource type="PackedScene" uid="uid://dh73ev5q32kuv" path="res://player.tscn" id="3_oeddg"]
+
+[node name="ScoreBoard" type="Node2D"]
+script = ExtResource("1_2gvqe")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_left = 1.0
+offset_top = 11.0
+offset_right = 468.0
+offset_bottom = 547.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 210.0
+offset_top = 117.0
+offset_right = 250.0
+offset_bottom = 425.0
+theme_override_fonts/font = ExtResource("2_ab31e")
+theme_override_font_sizes/font_size = 34
+text = "20
+19
+18
+17
+16
+15
+ B 
+✔
+"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 13.0
+offset_right = 468.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("2_ab31e")
+theme_override_font_sizes/font_size = 35
+text = "ScoreBoard"
+horizontal_alignment = 1
+
+[node name="Left" type="Line2D" parent="."]
+position = Vector2(-19, 0)
+points = PackedVector2Array(201, 101, 200, 438)
+width = 5.0
+
+[node name="Right" type="Line2D" parent="."]
+points = PackedVector2Array(282, 109, 283, 432)
+width = 5.0
+
+[node name="Top" type="Line2D" parent="."]
+points = PackedVector2Array(23, 103, 453, 103)
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 66.0
+offset_top = 123.0
+offset_right = 121.0
+offset_bottom = 460.0
+theme_override_fonts/font = ExtResource("2_ab31e")
+theme_override_font_sizes/font_size = 34
+text = "✔"
+
+[node name="Player" parent="." instance=ExtResource("3_oeddg")]
+position = Vector2(23, 49)
+
+[connection signal="mouse_entered" from="PanelContainer" to="." method="_on_panel_container_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer" to="." method="_on_panel_container_mouse_exited"]

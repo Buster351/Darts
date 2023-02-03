@@ -1,0 +1,17 @@
+Label
+PopupPanel
+Area2D
+AnimationPlayer
+Sprite2D
+Panel
+ProgressBar
+CanvasLayer
+LineEdit
+TextEdit
+Line2D
+ReferenceRect
+TextureRect
+ColorRect
+HSeparator
+PanelContainer
+Node2D

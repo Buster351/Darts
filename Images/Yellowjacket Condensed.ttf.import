@@ -1,0 +1,32 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://dylah73e06mmc"
+path="res://.godot/imported/Yellowjacket Condensed.ttf-ac148ca715b6227b733e18c063c7b99f.fontdata"
+
+[deps]
+
+source_file="res://Images/Yellowjacket Condensed.ttf"
+dest_files=["res://.godot/imported/Yellowjacket Condensed.ttf-ac148ca715b6227b733e18c063c7b99f.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

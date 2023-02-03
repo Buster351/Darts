@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dutcb5r2u3f5c"]
+
+[ext_resource type="Script" path="res://Board.gd" id="1_4a0vl"]
+[ext_resource type="Texture2D" uid="uid://duntxdrs0w0oy" path="res://DartBAlpha.png" id="1_g03kf"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_4a0vl")
+
+[node name="Dartbg" type="Sprite2D" parent="."]
+position = Vector2(347, 262)
+texture = ExtResource("1_g03kf")
